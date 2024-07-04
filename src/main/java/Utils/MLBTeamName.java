@@ -1,0 +1,70 @@
+package Utils;
+
+public class MLBTeamName {
+
+	public static String PARENT_CATEGORY = "MLB";
+	
+	public static String Atlanta_Braves_FULL_NAME = "Atlanta Braves";
+	public static String Arizona_Diamondbacks_FULL_NAME = "Arizona Diamondbacks";
+	public static String Baltimore_Orioles_FULL_NAME = "Baltimore Orioles";
+	public static String Boston_Red_Sox_FULL_NAME = "Boston Red Sox";
+	public static String Chicago_Cubs_FULL_NAME = "Chicago Cubs ";
+	public static String Cleveland_Guardians_FULL_NAME = "Cleveland Guardians";
+	public static String Cleveland_Indians_FULL_NAME = "Cleveland Indians";
+	public static String Cincinnati_Reds_FULL_NAME = "Cincinnati Reds";
+	public static String Colorado_Rockies_FULL_NAME = "Colorado Rockies";
+	public static String Chicago_White_Sox_FULL_NAME = "Chicago White Sox";
+	public static String Detroit_Tigers_FULL_NAME = "Detroit Tigers";
+	public static String Houston_Astros_FULL_NAME = "Houston Astros ";
+	public static String Kansas_City_Royals_FULL_NAME = "Kansas City Royals";
+	public static String Los_Angeles_Angels_of_Anaheim_FULL_NAME = "Los Angeles Angels of Anaheim";
+	public static String Los_Angeles_Angels_FULL_NAME = "Los Angeles Angels";
+	public static String Los_Angeles_Dodgers_FULL_NAME = "Los Angeles Dodgers";
+	public static String Milwaukee_Brewers_FULL_NAME = "Milwaukee Brewers ";
+	public static String Miami_Marlins_FULL_NAME = "Miami Marlins";
+	public static String Minnesota_Twins_FULL_NAME = "Minnesota Twins";
+	public static String New_York_Mets_FULL_NAME = "New York Mets";
+	public static String NewYork_Yankees_FULL_NAME = "New York Yankees";
+	public static String Oakland_Athletics_FULL_NAME = "Oakland Athletics ";
+	public static String Pittsburgh_Pirates_FULL_NAME = "Pittsburgh Pirates";
+	public static String Philadelphia_Phillies_FULL_NAME = "Philadelphia Phillies";
+	public static String San_Diego_Padres_FULL_NAME = "San Diego Padres";
+	public static String San_Francisco_Giants_FULL_NAME = "San Francisco Giants";
+	public static String St_Louis_Cardinals_FULL_NAME = "St. Louis Cardinals ";
+	public static String Seattle_Mariners_FULL_NAME = "Seattle Mariners";
+	public static String Toronto_Blue_Jays_FULL_NAME = "Toronto Blue Jays";
+	public static String Tampa_Bay_Rays_FULL_NAME = "Tampa Bay Rays";
+	public static String Texas_Rangers_FULL_NAME = "Texas Rangers";
+	public static String Washington_Nationals_FULL_NAME = "Washington Nationals";
+	
+	public static String Atlanta_Braves_SHORT_NAME = "AB";
+	public static String Arizona_Diamondbacks_SHORT_NAME = "AD";
+	public static String Baltimore_Orioles_SHORT_NAME = "BO";
+	public static String Boston_Red_Sox_SHORT_NAME = "BRS";
+	public static String Chicago_Cubs__SHORT_NAME = "CC";
+	public static String Cleveland_Guardians_SHORT_NAME = "CG";
+	public static String Cincinnati_Reds_SHORT_NAME = "CiR";
+	public static String Colorado_Rockies_SHORT_NAME = "CoR";
+	public static String Chicago_White_Sox_SHORT_NAME = "CWS";
+	public static String Detroit_Tigers_SHORT_NAME = "DT";
+	public static String Houston_Astros__SHORT_NAME = "HA";
+	public static String Kansas_City_Royals_SHORT_NAME = "KCR";
+	public static String Los_Angeles_Angels_of_Anaheim_SHORT_NAME = "LAA";
+	public static String Los_Angeles_Dodgers_SHORT_NAME = "LAD";
+	public static String Milwaukee_Brewers__SHORT_NAME = "MB";
+	public static String Miami_Marlins_SHORT_NAME = "MM";
+	public static String Minnesota_Twins_SHORT_NAME = "MT";
+	public static String New_York_Mets_SHORT_NAME = "NYM";
+	public static String NewYork_Yankees_SHORT_NAME = "NYY";
+	public static String Oakland_Athletics__SHORT_NAME = "OA";
+	public static String Pittsburgh_Pirates_SHORT_NAME = "PiP";
+	public static String Philadelphia_Phillies_SHORT_NAME = "PP";
+	public static String San_Diego_Padres_SHORT_NAME = "SDP";
+	public static String San_Francisco_Giants_SHORT_NAME = "SFG";
+	public static String St_Louis_Cardinals__SHORT_NAME = "SLC";
+	public static String Seattle_Mariners_SHORT_NAME = "SM";
+	public static String Toronto_Blue_Jays_SHORT_NAME = "TBJ";
+	public static String Tampa_Bay_Rays_SHORT_NAME = "TBR";
+	public static String Texas_Rangers_SHORT_NAME = "TR";
+	public static String Washington_Nationals_SHORT_NAME = "WN";
+}

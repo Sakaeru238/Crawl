@@ -1,0 +1,72 @@
+package Utils;
+
+public class NHLTeamName {
+	
+	public static String PARENT_CATEGORY = "NHL";
+	
+	public static String Arizona_Coyotes_FULL_NAME = "Arizona Coyotes";
+	public static String Anaheim_Ducks_FULL_NAME = "Anaheim Ducks";
+	public static String Boston_Bruins_FULL_NAME = "Boston Bruins";
+	public static String Buffalo_Sabres_FULL_NAME = "Buffalo Sabres";
+	public static String Colorado_Avalanche_FULL_NAME = "Colorado Avalanche";
+	public static String Chicago_BlackHawks_FULL_NAME = "Chicago BlackHawks";
+	public static String Columbus_Blue_Jackets_FULL_NAME = "Columbus Blue Jackets";
+	public static String Calgary_Flames_FULL_NAME = "Calgary Flames";
+	public static String Carolina_Hurricanes_FULL_NAME = "Carolina Hurricanes";
+	public static String Detroit_Red_Wings_FULL_NAME = "Detroit Red Wings";
+	public static String Dallas_Stars_FULL_NAME = "Dallas Stars";
+	public static String Edmonton_Oilers_FULL_NAME = "Edmonton Oilers";
+	public static String Florida_Panthers_FULL_NAME = "Florida Panthers";
+	public static String Los_Angeles_Kings_FULL_NAME = "Los Angeles Kings";
+	public static String Montreal_Canadiens_FULL_NAME = "Montreal Canadiens";
+	public static String Minnesota_Wild_FULL_NAME = "Minnesota Wild";
+	public static String New_Jersey_Devils_FULL_NAME = "New Jersey Devils";
+	public static String Nashville_Predators_FULL_NAME = "Nashville Predators";
+	public static String NYI_FULL_NAME = "New York Islanders";
+	public static String NYR_FULL_NAME = "New York Rangers";
+	public static String Ottawa_Senators_FULL_NAME = "Ottawa Senators";
+	public static String Philadelphia_Flyers_FULL_NAME = "Philadelphia Flyers";
+	public static String Pittsburgh_Penguins_FULL_NAME = "Pittsburgh Penguins";
+	public static String San_Jose_Sharks_FULL_NAME = "San Jose Sharks";
+	public static String Seattle_Kraken_FULL_NAME = "Seattle Kraken";
+	public static String St_Louis_Blues_FULL_NAME = "St. Louis Blues";
+	public static String Tampa_Bay_Lightning_FULL_NAME = "Tampa Bay Lightning";
+	public static String Toronto_Maple_Leafs_FULL_NAME = "Toronto Maple Leafs";
+	public static String Vancouver_Canucks_FULL_NAME = "Vancouver Canucks";
+	public static String Vegas_Golden_Knights_FULL_NAME = "Vegas Golden Knights";
+	public static String Washington_Capitals_FULL_NAME = "Washington Capitals";
+	public static String Winnipeg_Jets_FULL_NAME = "Winnipeg Jets";
+	
+	public static String Arizona_Coyotes_SHORT_NAME = "AC";
+	public static String Anaheim_Ducks_SHORT_NAME = "AD";
+	public static String Boston_Bruins_SHORT_NAME = "BB";
+	public static String Buffalo_Sabres_SHORT_NAME = "BS";
+	public static String Colorado_Avalanche_SHORT_NAME = "CA";
+	public static String Chicago_BlackHawks_SHORT_NAME = "CB";
+	public static String Columbus_Blue_Jackets_SHORT_NAME = "CBJ";
+	public static String Calgary_Flames_SHORT_NAME = "CF";
+	public static String Carolina_Hurricanes_SHORT_NAME = "CH";
+	public static String Detroit_Red_Wings_SHORT_NAME = "DRW";
+	public static String Dallas_Stars_SHORT_NAME = "DS";
+	public static String Edmonton_Oilers_SHORT_NAME = "EO";
+	public static String Florida_Panthers_SHORT_NAME = "FP";
+	public static String Los_Angeles_Kings_SHORT_NAME = "LAK";
+	public static String Montreal_Canadiens_SHORT_NAME = "MC";
+	public static String Minnesota_Wild_SHORT_NAME = "MW";
+	public static String New_Jersey_Devils_SHORT_NAME = "NJD";
+	public static String Nashville_Predators_SHORT_NAME = "NP";
+	public static String NYI_SHORT_NAME = "NYI";
+	public static String NYR_SHORT_NAME = "NYR";
+	public static String Ottawa_Senators_SHORT_NAME = "OS";
+	public static String Philadelphia_Flyers_SHORT_NAME = "PF";
+	public static String Pittsburgh_Penguins_SHORT_NAME = "PP";
+	public static String San_Jose_Sharks_SHORT_NAME = "SJS";
+	public static String Seattle_Kraken_SHORT_NAME = "SK";
+	public static String St_Louis_Blues_SHORT_NAME = "SLB";
+	public static String Tampa_Bay_Lightning_SHORT_NAME = "TBL";
+	public static String Toronto_Maple_Leafs_SHORT_NAME = "TML";
+	public static String Vancouver_Canucks_SHORT_NAME = "VC";
+	public static String Vegas_Golden_Knights_SHORT_NAME = "VGK";
+	public static String Washington_Capitals_SHORT_NAME = "WC";
+	public static String Winnipeg_Jets_SHORT_NAME = "WJ";
+}
