@@ -262,4 +262,203 @@ public class BuildCategory {
 
 		return builder.toString();
 	}
+	
+	public static String AFLCategory(String title) {
+		StringBuilder builder = new StringBuilder();
+		builder.append(AFLTeamName.PARENT_CATEGORY);
+		builder.append(Constants.SPACE);
+		builder.append(Constants.RIGHT_ARROW);
+		builder.append(Constants.SPACE);
+		
+		if (title.toLowerCase().contains(AFLTeamName.Port_Adelaide_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Port_Adelaide_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Western_Bulldogs_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Western_Bulldogs_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Carlton_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Carlton_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Geelong_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Geelong_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Collingwood_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Collingwood_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Adelaide_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Adelaide_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.West_Coast_Eagles_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.West_Coast_Eagles_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Essendon_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Essendon_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Fremantle_Dockers_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Fremantle_Dockers_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Greater_Western_Sydney_Giants_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Greater_Western_Sydney_Giants_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Hawthorn_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Hawthorn_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.St_Kilda_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.St_Kilda_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Brisbane_Lions_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Brisbane_Lions_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Melbourne_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Melbourne_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.North_Melbourne_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.North_Melbourne_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Richmond_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Richmond_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Gold_Coast_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Gold_Coast_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(AFLTeamName.Sydney_Swans_FULL_NAME.toLowerCase())) {
+			builder.append(AFLTeamName.Sydney_Swans_FULL_NAME);
+		}
+		
+		return builder.toString();
+	}
+	
+	public static String NRLCategory(String title) {
+		
+		StringBuilder builder = new StringBuilder();
+		builder.append(AFLTeamName.PARENT_CATEGORY);
+		builder.append(Constants.SPACE);
+		builder.append(Constants.RIGHT_ARROW);
+		builder.append(Constants.SPACE);
+		
+		if (title.toLowerCase().contains(NRLTeamName.Brisbane_Broncos_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Brisbane_Broncos_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Canterbury_Bankstown_Bulldogs_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Canterbury_Bankstown_Bulldogs_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.North_Queensland_Cowboys_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.North_Queensland_Cowboys_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.St_George_Illawarra_Dragons_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.St_George_Illawarra_Dragons_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Manly_Warringah_Sea_Eagles_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Manly_Warringah_Sea_Eagles_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Parramatta_Eels_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Parramatta_Eels_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Newcastle_Knights_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Newcastle_Knights_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Penrith_Panthers_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Penrith_Panthers_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.South_Sydney_Rabbitohs_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.South_Sydney_Rabbitohs_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Canberra_Raiders_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Canberra_Raiders_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Sydney_Roosters_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Sydney_Roosters_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Cronulla_Sutherland_Sharks_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Cronulla_Sutherland_Sharks_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Melbourne_Storm_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Melbourne_Storm_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Wests_Tigers_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Wests_Tigers_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Gold_Coast_Titans_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Gold_Coast_Titans_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.New_Zealand_Warriors_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.New_Zealand_Warriors_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Gold_Coast_Football_Club_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Gold_Coast_Football_Club_FULL_NAME);
+		}
+		
+		return builder.toString();
+	}
+	
+	public static String NLLCategory(String title) {
+
+		StringBuilder builder = new StringBuilder();
+		builder.append(NLLTeamName.PARENT_CATEGORY);
+		builder.append(Constants.SPACE);
+		builder.append(Constants.RIGHT_ARROW);
+		builder.append(Constants.SPACE);
+		
+		if (title.toLowerCase().contains(NLLTeamName.Albany_FireWolves_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.USA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Albany_FireWolves_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Buffalo_Bandits_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.USA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Buffalo_Bandits_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Colorado_Mammoth_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.USA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Colorado_Mammoth_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Calgary_Roughnecks_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.CANADA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Calgary_Roughnecks_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Georgia_Swarm_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.USA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Georgia_Swarm_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Halifax_Thunderbirds_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.CANADA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Halifax_Thunderbirds_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Las_Vegas_Desert_Dogs_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.USA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Las_Vegas_Desert_Dogs_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.New_York_Riptide_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.USA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.New_York_Riptide_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Panther_City_Lacrosse_Club_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.USA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Panther_City_Lacrosse_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Philadelphia_Wings_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.USA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Philadelphia_Wings_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Rochester_Knighthawks_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.USA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Rochester_Knighthawks_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.San_Diego_Seals_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.USA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.San_Diego_Seals_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Saskatchewan_Rush_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.CANADA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Saskatchewan_Rush_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Toronto_Rock_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.CANADA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Toronto_Rock_FULL_NAME);
+		} else if (title.toLowerCase().contains(NLLTeamName.Vancouver_Warriors_FULL_NAME.toLowerCase())) {
+			builder.append(NLLTeamName.CANADA_CATEGORY);
+			builder.append(Constants.SPACE);
+			builder.append(Constants.RIGHT_ARROW);
+			builder.append(Constants.SPACE);
+			builder.append(NLLTeamName.Vancouver_Warriors_FULL_NAME);
+		}
+
+		return builder.toString();
+	}
+	
 }
