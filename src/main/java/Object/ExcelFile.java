@@ -8,6 +8,8 @@ public class ExcelFile {
 	private String title;
 	private String type;
 	private List<String> imageUrls;
+	private String price;
+	
 	public String getTitle() {
 		return title;
 	}
@@ -26,5 +28,11 @@ public class ExcelFile {
 	public void setImageUrls(List<String> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
-
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	
 }

@@ -26,7 +26,7 @@ public class Constants {
 	
 	public static String SPACE = " ";
 			
-	public static String TYPE_DEFAULT_IMAGE_STRING = "https://nativetee.nyc3.digitaloceanspaces.com/products/";
+	public static String TYPE_DEFAULT_IMAGE_STRING = "https://nativetee.nyc3.digitaloceanspaces.com/products/images/";
 	
 	public static String FILE_EXTENSION = ".csv";
 	
@@ -42,10 +42,18 @@ public class Constants {
 	
 	public static String HEADER_IMAGE_LINK = "Image Link";
 	
+	public static String HEADER_PRICE = "Price";
+	
 	public static String RIGHT_ARROW = ">";
 	
 	public static String COMAS = ",";
 	
-	public static String UNUSED_STRING_NEW = "[NEW[";
+	public static String UNUSED_STRING_NEW = "[NEW]";
+	
+	public static String UNUSED_STRING_SALE = "[SALE]";
+	
+	public static String DEFAULT_STRING = "CLONE";
+	
+	public static String DOLLAR_SYMBOL = "$";
 
 }

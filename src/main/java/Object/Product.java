@@ -7,6 +7,7 @@ public class Product {
 	private String title;
 	private String category;
 	private String tag;
+	private String price;
 	
 	public String getSku() {
 		return sku;
@@ -43,6 +44,12 @@ public class Product {
 	}
 	public void setTag(String tag) {
 		this.tag = tag;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
 	}
 		
 	

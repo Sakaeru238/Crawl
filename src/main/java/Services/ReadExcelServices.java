@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -83,9 +84,17 @@ public class ReadExcelServices {
 		} else {
 			rowData.setType(row.getCell(1).toString());
 		}
+		// Price
+		if (String.valueOf(row.getCell(2)) == null || String.valueOf(row.getCell(2)).isEmpty()
+				|| String.valueOf(row.getCell(2)).equals("null")) {
+			rowData.setType(Constants.EMPTY_STRING);
+		} else {
+			rowData.setType(row.getCell(2).toString());
+		}
+
 		// Image
 		List<String> images = new ArrayList<String>();
-		for(int i=2; i<(Constants.IMAGE_COLLUMN_MAX+2); i++) {
+		for (int i = 3; i < (Constants.IMAGE_COLLUMN_MAX + 3); i++) {
 			String imageLink = new String();
 			if (String.valueOf(row.getCell(i)) == null || String.valueOf(row.getCell(i)).isEmpty()
 					|| String.valueOf(row.getCell(0)).equals("null")) {
@@ -100,5 +109,17 @@ public class ReadExcelServices {
 		
 		return rowData;		
 	}
+	
+	private static int getLastColumnWithData(Row row) {
+        int lastColumn = -1;
+        for (int cellNum = row.getLastCellNum() - 1; cellNum >= row.getFirstCellNum(); cellNum--) {
+            Cell cell = row.getCell(cellNum, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);
+            if (cell != null && cell.getCellType() != CellType.BLANK) {
+                lastColumn = cellNum;
+                break;
+            }
+        }
+        return lastColumn;
+    }
 
 }

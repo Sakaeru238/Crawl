@@ -39,7 +39,7 @@ public class WriteExcelServices {
 			writer.writeNext(header);
 			
 			for(Product product : products) {
-				String[] data = { product.getSku(), product.getType(), product.getCategory(), product.getTitle(), product.getTag(),  product.getImageLink() };
+				String[] data = { product.getSku(), product.getType(), product.getCategory(), product.getTitle(), product.getTag(),  product.getImageLink(), product.getPrice() };
 				System.out.println(product.getSku());
 				writer.writeNext(data);
 			}
@@ -66,6 +66,8 @@ public class WriteExcelServices {
 		csvHeader[3] = Constants.HEADER_TITLE;
 		csvHeader[4] = Constants.HEADER_TAG;
 		csvHeader[5] = Constants.HEADER_IMAGE_LINK;
+		csvHeader[6] = Constants.HEADER_IMAGE_LINK;
+		
 		return csvHeader;
 	}
 
