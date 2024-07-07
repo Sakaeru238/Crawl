@@ -10,6 +10,7 @@ import java.nio.file.Paths;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -30,76 +31,85 @@ public class ConvertRawDataServices {
 		List<Product> products = new ArrayList<Product>();
 		String date = new SimpleDateFormat("yyyyMMdd").format(new Date());
 
-		for(int i=0; i<excelFile.size(); i++) {
-			Product product = new Product();
-			
-			DecimalFormat formatter = new DecimalFormat("00");
-			String aFormatted = formatter.format(i);
-			String cloneSKU = Constants.CLONE_SKU + Constants.UNDER_SCORE + date.toString() + Constants.UNDER_SCORE + aFormatted;
-			product.setSku(cloneSKU);
-			
-			//Type
-			product.setType(excelFile.get(i).getType());
-			
-			//Category
-			String category = "";
-			System.out.println(excelFile.get(i).getTitle());
-			if(CheckSportBrand.isNFLTeam(excelFile.get(i).getTitle())) {
-				category = BuildCategory.NFLCategory(excelFile.get(i).getTitle());
-				product.setCategory(category);
-			} else if(CheckSportBrand.isNHLTeam(excelFile.get(i).getTitle())) {
-				category = BuildCategory.NHLCategory(excelFile.get(i).getTitle());
-				product.setCategory(category);
-			} else if(CheckSportBrand.isMLBTeam(excelFile.get(i).getTitle())) {
-				category = BuildCategory.MLBCategory(excelFile.get(i).getTitle());
-				product.setCategory(category);
-			} else if (CheckSportBrand.isAFLTeam(excelFile.get(i).getTitle())) {
-				category = BuildCategory.AFLCategory(excelFile.get(i).getTitle());
-				product.setCategory(category);
-			} else if (CheckSportBrand.isNRLTeam(excelFile.get(i).getTitle())) {
-				category = BuildCategory.NRLCategory(excelFile.get(i).getTitle());
-				product.setCategory(category);
-			} else if (CheckSportBrand.isNLLTeam(excelFile.get(i).getTitle())) {
-				category = BuildCategory.NLLCategory(excelFile.get(i).getTitle());
-				product.setCategory(category);
-			} else {
-				category = Constants.DEFAULT_STRING;
-				product.setCategory(category);
+		try {
+			for(int i=0; i<excelFile.size(); i++) {
+				Product product = new Product();
+				
+				DecimalFormat formatter = new DecimalFormat("00");
+				String aFormatted = formatter.format(i);
+				String cloneSKU = Constants.CLONE_SKU + Constants.UNDER_SCORE + date.toString() + Constants.UNDER_SCORE + aFormatted;
+				product.setSku(cloneSKU);
+				
+				//Type
+				product.setType(excelFile.get(i).getType());
+				
+				//Category
+				String category = "";
+				System.out.println(excelFile.get(i).getTitle());
+				if(CheckSportBrand.isNFLTeam(excelFile.get(i).getTitle())) {
+					category = BuildCategory.NFLCategory(excelFile.get(i).getTitle());
+					product.setCategory(category);
+				} else if(CheckSportBrand.isNHLTeam(excelFile.get(i).getTitle())) {
+					category = BuildCategory.NHLCategory(excelFile.get(i).getTitle());
+					product.setCategory(category);
+				} else if(CheckSportBrand.isMLBTeam(excelFile.get(i).getTitle())) {
+					category = BuildCategory.MLBCategory(excelFile.get(i).getTitle());
+					product.setCategory(category);
+				} else if (CheckSportBrand.isAFLTeam(excelFile.get(i).getTitle())) {
+					category = BuildCategory.AFLCategory(excelFile.get(i).getTitle());
+					product.setCategory(category);
+				} else if (CheckSportBrand.isNRLTeam(excelFile.get(i).getTitle())) {
+					category = BuildCategory.NRLCategory(excelFile.get(i).getTitle());
+					product.setCategory(category);
+				} else if (CheckSportBrand.isNLLTeam(excelFile.get(i).getTitle())) {
+					category = BuildCategory.NLLCategory(excelFile.get(i).getTitle());
+					product.setCategory(category);
+				} else {
+					category = Constants.DEFAULT_STRING;
+					product.setCategory(category);
+				}
+				
+				//Title
+				String title = excelFile.get(i).getTitle();
+				title = remoteUnUsedParameterInTiltle(title);
+				product.setTitle(title);
+				
+				//ImageLink
+				checkSameImageLink(excelFile.get(i));
+				excelFile.get(i).getImageUrls().removeAll(Arrays.asList("", null));
+				String imageLink = dowloadImage(excelFile.get(i), cloneSKU);
+				product.setImageLink(imageLink);
+				
+				//Tag
+				String tag = "";
+				if(CheckSportBrand.isNFLTeam(excelFile.get(i).getTitle())) {
+					tag = BuildTag.NFLTag(excelFile.get(i).getTitle());
+					product.setTag(tag);
+				} else if(CheckSportBrand.isNHLTeam(excelFile.get(i).getTitle())) {
+					tag = BuildTag.NHLTag(excelFile.get(i).getTitle());
+					product.setTag(tag);
+				} else if(CheckSportBrand.isMLBTeam(excelFile.get(i).getTitle())) {
+					tag = BuildTag.MLBTag(excelFile.get(i).getTitle());
+					product.setTag(tag);
+				}
+				
+				//Price
+				if (String.valueOf(excelFile.get(i).getPrice()) == null || String.valueOf(excelFile.get(i).getPrice()).isEmpty()
+	    				|| String.valueOf(excelFile.get(i).getPrice()).equals("null")) {
+					product.setPrice(Constants.EMPTY_STRING);
+	    		} else {
+	    			product.setPrice(excelFile.get(i).getPrice());
+	    		}
+				
+				products.add(product);
+				Thread.sleep(5000);
 			}
-			
-			//Title
-			String title = excelFile.get(i).getTitle();
-			title = remoteUnUsedParameterInTiltle(title);
-			product.setTitle(title);
-			
-			//ImageLink
-			checkSameImageLink(excelFile.get(i));
-			String imageLink = dowloadImage(excelFile.get(i), cloneSKU);
-			product.setImageLink(imageLink);
-			
-			//Tag
-			String tag = "";
-			if(CheckSportBrand.isNFLTeam(excelFile.get(i).getTitle())) {
-				tag = BuildTag.NFLTag(excelFile.get(i).getTitle());
-				product.setTag(tag);
-			} else if(CheckSportBrand.isNHLTeam(excelFile.get(i).getTitle())) {
-				tag = BuildTag.NHLTag(excelFile.get(i).getTitle());
-				product.setTag(tag);
-			} else if(CheckSportBrand.isMLBTeam(excelFile.get(i).getTitle())) {
-				tag = BuildTag.MLBTag(excelFile.get(i).getTitle());
-				product.setTag(tag);
-			}
-			
-			//Price
-			if (String.valueOf(excelFile.get(i).getPrice()) == null || String.valueOf(excelFile.get(i).getPrice()).isEmpty()
-    				|| String.valueOf(excelFile.get(i).getPrice()).equals("null")) {
-				product.setPrice(Constants.EMPTY_STRING);
-    		} else {
-    			product.setPrice(excelFile.get(i).getPrice());
-    		}
-			
-			products.add(product);
+		} catch (InterruptedException e) {
+			System.out.println(e.toString());
+			System.out.println("Error thread down anh");
 		}
+		
+		
 		
 		return products;
 	}
@@ -108,7 +118,7 @@ public class ConvertRawDataServices {
 	private String dowloadImage(ExcelFile excelFile, String sku) {		
 		String imageLinks = "\"";
 		try {
-			for(int i=0; i<Constants.IMAGE_COLLUMN_MAX; i++) {
+			for(int i=0; i<excelFile.getImageUrls().size(); i++) {
 				if(excelFile.getImageUrls().get(i) != null || !excelFile.getImageUrls().get(i).isEmpty()) {
 					
 					URL url = new URL(excelFile.getImageUrls().get(i));

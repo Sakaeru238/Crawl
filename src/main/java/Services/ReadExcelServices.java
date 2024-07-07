@@ -2,6 +2,8 @@ package Services;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -74,9 +76,13 @@ public class ReadExcelServices {
 				|| String.valueOf(row.getCell(0)).equals("null")) {
 			rowData.setTitle(Constants.EMPTY_STRING);
 		} else {
-			rowData.setTitle(row.getCell(0).toString());
+			
+			String rawString = row.getCell(0).toString();
+			ByteBuffer buffer = StandardCharsets.UTF_8.encode(rawString); 
+		    String utf8EncodedString = StandardCharsets.UTF_8.decode(buffer).toString();
+			rowData.setTitle(utf8EncodedString);
 		}
-		
+			
 		// Type
 		if (String.valueOf(row.getCell(1)) == null || String.valueOf(row.getCell(1)).isEmpty()
 				|| String.valueOf(row.getCell(1)).equals("null")) {
