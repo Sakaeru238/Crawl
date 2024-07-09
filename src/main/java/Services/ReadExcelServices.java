@@ -93,9 +93,9 @@ public class ReadExcelServices {
 		// Price
 		if (String.valueOf(row.getCell(2)) == null || String.valueOf(row.getCell(2)).isEmpty()
 				|| String.valueOf(row.getCell(2)).equals("null")) {
-			rowData.setType(Constants.EMPTY_STRING);
+			rowData.setPrice(Constants.EMPTY_STRING);
 		} else {
-			rowData.setType(row.getCell(2).toString());
+			rowData.setPrice(row.getCell(2).toString());
 		}
 
 		// Image
