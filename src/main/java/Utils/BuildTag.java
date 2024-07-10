@@ -357,6 +357,8 @@ public class BuildTag {
 			builder.append(NRLTeamName.New_Zealand_Warriors_FULL_NAME);
 		} else if (title.toLowerCase().contains(NRLTeamName.Gold_Coast_Football_Club_FULL_NAME.toLowerCase())) {
 			builder.append(NRLTeamName.Gold_Coast_Football_Club_FULL_NAME);
+		} else if (title.toLowerCase().contains(NRLTeamName.Dolphins_FULL_NAME.toLowerCase())) {
+			builder.append(NRLTeamName.Dolphins_FULL_NAME);
 		}
 		
 		builder.append("\"");
@@ -408,4 +410,58 @@ public class BuildTag {
 
 		return builder.toString();
 	}
+	
+	public static String OHLTag(String title) {
+		StringBuilder builder = new StringBuilder();
+		builder.append("\"");
+		builder.append(NLLTeamName.PARENT_CATEGORY);
+		builder.append(Constants.COMAS);
+		builder.append(Constants.SPACE);
+		builder.append("\"");
+		
+		if (title.toLowerCase().contains(OHLTeamName.Barrie_Colts_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Barrie_Colts_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Erie_Otters_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Erie_Otters_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Flint_Firebirds_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Flint_Firebirds_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Guelph_Storm_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Guelph_Storm_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Brantford_Bulldogs_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Brantford_Bulldogs_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Kingston_Frontenacs_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Kingston_Frontenacs_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Kitchener_Rangers_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Kitchener_Rangers_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.London_Knights_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.London_Knights_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Mississauga_Steelheads_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Mississauga_Steelheads_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.North_Bay_Battalion_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.North_Bay_Battalion_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Niagara_IceDogs_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Niagara_IceDogs_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Ottawa_67s_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Ottawa_67s_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Oshawa_Generals_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Oshawa_Generals_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Owen_Sound_Attack_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Owen_Sound_Attack_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Peterborough_Petes_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Peterborough_Petes_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Sault_Ste_Marie_Greyhounds_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Sault_Ste_Marie_Greyhounds_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Saginaw_Spirit_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Saginaw_Spirit_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Sarnia_Sting_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Sarnia_Sting_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Sudbury_Wolves_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Sudbury_Wolves_FULL_NAME);
+		} else if (title.toLowerCase().contains(OHLTeamName.Windsor_Spitfires_FULL_NAME.toLowerCase())) {
+			builder.append(OHLTeamName.Windsor_Spitfires_FULL_NAME);
+		}
+
+		return builder.toString();
+	}	
+	
 }

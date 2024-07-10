@@ -444,6 +444,9 @@ public class CheckSportBrand {
 		} else if (title.toLowerCase().contains(NRLTeamName.Gold_Coast_Football_Club_FULL_NAME.toLowerCase())) {
 			result = true;
 			return result;
+		} else if (title.toLowerCase().contains(NRLTeamName.Dolphins_FULL_NAME.toLowerCase())) {
+			result = true;
+			return result;
 		}
 		return result;
 	}

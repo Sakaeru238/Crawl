@@ -5,9 +5,9 @@ public class NRLTeamName {
 	public static String PARENT_CATEGORY = "NRL";
 	
 	public static String Brisbane_Broncos_FULL_NAME = "Brisbane Broncos";
-	public static String Canterbury_Bankstown_Bulldogs_FULL_NAME = "Canterbury Bankstown Bulldogs";
+	public static String Canterbury_Bankstown_Bulldogs_FULL_NAME = "Canterbury-Bankstown Bulldogs";
 	public static String North_Queensland_Cowboys_FULL_NAME = "North Queensland Cowboys";
-	public static String St_George_Illawarra_Dragons_FULL_NAME = "St.George Illawarra Dragons";
+	public static String St_George_Illawarra_Dragons_FULL_NAME = "St. George Illawarra Dragons";
 	public static String Manly_Warringah_Sea_Eagles_FULL_NAME = "Manly Warringah Sea Eagles";
 	public static String Parramatta_Eels_FULL_NAME = "Parramatta Eels";
 	public static String Newcastle_Knights_FULL_NAME = "Newcastle Knights";
@@ -21,6 +21,7 @@ public class NRLTeamName {
 	public static String Gold_Coast_Titans_FULL_NAME = "Gold Coast Titans";
 	public static String New_Zealand_Warriors_FULL_NAME = "New Zealand Warriors";
 	public static String Gold_Coast_Football_Club_FULL_NAME = "Gold Coast Football Club";
+	public static String Dolphins_FULL_NAME = "Dolphins";
 	
 	public static String Brisbane_Broncos_SHORT_NAME = "BB";
 	public static String Canterbury_Bankstown_Bulldogs_SHORT_NAME = "CBB";

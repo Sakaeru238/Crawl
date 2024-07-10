@@ -2,6 +2,7 @@ package Services;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -28,7 +29,7 @@ public class WriteExcelServices {
 			File file = new File(fileName);
 			
 			// create FileWriter object with file as parameter
-			FileWriter outputfile = new FileWriter(file);
+			FileWriter outputfile = new FileWriter(file, StandardCharsets.UTF_8);
 
 			// create CSVWriter object filewriter object as parameter
 			CSVWriter writer = new CSVWriter(outputfile, ',', CSVWriter.NO_QUOTE_CHARACTER, '\0',

@@ -80,6 +80,9 @@ public class ReadExcelServices {
 			String rawString = row.getCell(0).toString();
 			ByteBuffer buffer = StandardCharsets.UTF_8.encode(rawString); 
 		    String utf8EncodedString = StandardCharsets.UTF_8.decode(buffer).toString();
+			if (utf8EncodedString.contains(Constants.COMAS)) {
+				utf8EncodedString.replace(Constants.COMAS, "");
+			}
 			rowData.setTitle(utf8EncodedString);
 		}
 			

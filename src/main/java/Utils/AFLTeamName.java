@@ -8,7 +8,7 @@ public class AFLTeamName {
 	public static String Western_Bulldogs_FULL_NAME = "Western Bulldogs";
 	public static String Carlton_Football_Club_FULL_NAME = "Carlton Football Club";
 	public static String Geelong_Football_Club_FULL_NAME = "Geelong Football Club";
-	public static String Collingwood_Football_Club_FULL_NAME = "Collingwood Football Club ";
+	public static String Collingwood_Football_Club_FULL_NAME = "Collingwood Football Club";
 	public static String Adelaide_Football_Club_FULL_NAME = "Adelaide Football Club";
 	public static String West_Coast_Eagles_FULL_NAME = "West Coast Eagles";
 	public static String Essendon_Football_Club_FULL_NAME = "Essendon Football Club";
@@ -19,7 +19,7 @@ public class AFLTeamName {
 	public static String Brisbane_Lions_FULL_NAME = "Brisbane Lions";
 	public static String Melbourne_Football_Club_FULL_NAME = "Melbourne Football Club";
 	public static String North_Melbourne_Football_Club_FULL_NAME = "North Melbourne Football Club";
-	public static String Richmond_FULL_NAME = "Richmond";
+	public static String Richmond_FULL_NAME = "Richmond Football Club";
 	public static String Gold_Coast_Football_Club_FULL_NAME = "Gold Coast Football Club";
 	public static String Sydney_Swans_FULL_NAME = "Sydney Swans";
 	
